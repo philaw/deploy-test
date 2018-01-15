@@ -4,7 +4,7 @@ workspace:
 
 pipeline:
 
-  api-tests-container:
+  build-and-publish-image:
     group: Containers
     docker:
     image: plugins/docker
