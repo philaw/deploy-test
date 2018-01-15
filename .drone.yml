@@ -1,0 +1,21 @@
+workspace:
+  base: /srv
+  path: node
+
+pipeline:
+
+  build-and-publish-image:
+    group: Containers
+    docker:
+    image: plugins/docker
+    pull: true
+    tags:
+      - latest
+      - ${DRONE_BUILD_NUMBER}
+      - ${DRONE_REPO_BRANCH/\//-}-${DRONE_BUILD_NUMBER}
+      - ${DRONE_REPO_BRANCH/\//-}
+    insecure: true
+    repo: registry.airwallex.com/deploy-test
+    registry: registry.airwallex.com
+    dockerfile: Dockerfile
+

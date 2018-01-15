@@ -1,0 +1,37 @@
+buildImg.sh
+api-tests/testconfigs/config.local.json
+doneTest
+.idea/
+results/
+reports/
+output/
+
+# OS X
+.DS_Store*
+Icon?
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+*~
+
+
+# npm
+node_modules
+*.log
+*.gz
+
+
+# Coveralls
+coverage
+
+
+#Cypress
+screenshots/
+videos/
+/Dockerfile-cypress
