@@ -1,0 +1,2 @@
+git@github.com:philaw/sample1.git
+git@github.com:philaw/sample2.git
