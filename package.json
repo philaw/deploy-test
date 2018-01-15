@@ -1,0 +1,11 @@
+{
+  "name": "result_server",
+  "version": "1.0.0",
+  "description": "Test results server",
+  "main": "index.js",
+  "author": "Airwallex",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
